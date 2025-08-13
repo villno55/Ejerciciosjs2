@@ -1,10 +1,16 @@
-/*1.Usted ha realizado una compra y conoce el precio del producto y su iva. Haga un script que
-calcule el precio total que va a pagar por la compra. Para calcular el total debe sumar al precio
-el resultado de multiplicar precio por el iva y dividir por 100.*/
+/*Escribir un script que diga si un número es par o es impar. Recordemos que un número es par
+si al dividirlo por 2 da como resto 0.*/
 
-let productPrecio = 20000;
-let iva = 19;
+// Verificar si un número es par o impar
 
-let total = productPrecio + (productPrecio * iva / 100);
+const prompt = require('prompt-sync')();  
 
-console.log("El precio total es: " + total);
+let numero = parseInt(prompt("Ingrese un número:"));
+
+if (isNaN(numero)) {
+  console.log("Eso no es un número válido.");
+} else if (numero % 2 === 0) {
+  console.log(numero + " es par.");
+} else {
+  console.log(numero + " es impar.");
+}
