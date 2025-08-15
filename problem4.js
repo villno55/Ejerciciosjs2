@@ -1,9 +1,8 @@
-/*Pedir al usuario que teclee tres números enteros y el script mostrará como resultado el valor
-medio de los tres. Recuerda que la media de tres números se calcula sumando los tres y
-dividiendo entre 3.*/
+let dia = parseInt(prompt("Ingresa un número entre 1 y 7:"));
+let diaSemana = ["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"];
 
-let num1 = parseInt(prompt("Ingresa el 1 número:"));
-let num2 = parseInt(prompt("Ingresa el 2 número:"));
-let num3 = parseInt(prompt("Ingresa el 3 número:"));
-let media = (num1 + num2 + num3) / 3;
-console.log("La media es: " + media);
+if (dia >= 1 && dia <= 7) {
+    console.log(`El día es: ${diasSemana[dia - 1]}`);
+} else {
+    console.log("Número fuera de rango");
+}
