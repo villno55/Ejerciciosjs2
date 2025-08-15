@@ -1,9 +1,9 @@
-/*En una variable tiene el lado de un cuadrado, debe escribir un programa que calcule el área y
-el perímetro del cuadrado. El area la calcula como lado multiplicado por lado. El perímetro es la
-suma de los cuatro lados*/
+let num = parseInt(prompt("Ingresa un número entero:"));
+let sum = 0;
+let temp = num;
 
-let lado =5 
-let area = lado * lado;
-let perimetro = 4 * lado;
-console.log("Área: " + area);
-console.log("Perímetro: " + perimetro);
+while (temp !== 0) {
+    sum += temp % 10;
+    temp = Math.floor(temp / 10);
+}
+console.log(`La suma de los dígitos de ${num} es: ${sum}`);
