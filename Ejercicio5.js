@@ -4,5 +4,5 @@ if (edadCliente < 5) {
 } else if (edadCliente <= 18) {
     console.log("El precio de la entrada es de 5 mil pesos");
 } else {
-    console.log("El precio de la entrada es de 10 mil pesos");
+    console.log("El preci de la entrada es de 10 mil pesos");
 }
