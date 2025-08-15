@@ -1,6 +1,10 @@
-/* Escriba un script que dado un número nos devuelva true si es un número par y false si es un
-número impar. No usar condiconales.*/ 
+let repet = parseInt(prompt("Ingresa un número entre 1 y 20:"));
+let frase = prompt("Ingresa una frase:");
 
-let numero = parseInt(prompt("Ingrese un número:"));
-let esPar = numero % 2 === 0;
-console.log(esPar);
+if (repet >= 1 && repet <= 20) {
+    for (let i = 0; i < repet; i++) {
+        console.log(frase);
+    }
+} else {
+    console.log("Número fuera de rango");
+}
