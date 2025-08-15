@@ -1,7 +1,12 @@
-/* Cambio de unidades. en este ejercicio se solicita convertir a segundos una medida de tiempo
-dada en horas y minutos. Recuerda una hora son 60 minutos y cada minuto son 60 segundos.*/
+let salario = parseFloat(prompt("Ingresa tu salario mensual:"));
+let imp = 0;
 
-let h = parseInt(prompt("Ingrese la cantidad de horas:"));
-let min = parseInt(prompt("Ingrese la cantidad de minutos:"));
-let totalSegundos = (h * 3600) + (min * 60);
-console.log("EL Tiempo total en segundos es: " + totalSegundos);
+if (salario <= 2000000) {
+    imp = 0;
+} else if (salario <= 5000000) {
+    imp = salario * 0.10;
+} else {
+    imp = salario * 0.20;
+}
+
+console.log(`El impuesto a pagar es: ${imp} pesos`);
