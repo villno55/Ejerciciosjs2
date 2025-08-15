@@ -1,6 +1,10 @@
-/*Un poco de interactividad. En este ejercicio debe escribir un programa que lea el nombre del
-usuario y salude con un "Hola" seguido del nombre del usuario. Para leer el nombre usa un
-prompt con un texto indicativo como "Escribe tu nombre" */
 
-let nombre="anderson"
-console.log("Escribe tu nombre: "+nombre);
+let edad = parseInt(prompt("Ingresa su edad:"));
+let tieneCedula = prompt("¿Tenes cédula? (si/no)").toLowerCase();
+let cedulaInscrita = prompt("¿Tiene inscrita la cédula? (si/no)").toLowerCase();
+
+if (edad >= 18 && tieneCedula === "si" && cedulaInscrita === "si") {
+    console.log("Puede votar");
+} else {
+    console.log("No puede votar");
+}
